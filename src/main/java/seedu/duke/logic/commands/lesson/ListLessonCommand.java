@@ -1,5 +1,6 @@
 package seedu.duke.logic.commands.lesson;
 
+import seedu.duke.DukeException;
 import seedu.duke.logic.commands.Command;
 import seedu.duke.model.lesson.LessonList;
 import seedu.duke.model.module.ModuleList;
@@ -16,7 +17,8 @@ public class ListLessonCommand extends Command {
     }
 
     @Override
-    public void execute(Ui ui, Storage storage, TaskList taskList, LessonList lessonList, ModuleList moduleList) {
+    public void execute(Ui ui, Storage storage, TaskList taskList, LessonList lessonList, ModuleList moduleList)
+            throws DukeException {
         if (lessonList.isEmpty()) {
             ui.printMessage("There are no lessons in the list.");
         } else if (period.isBlank()) {

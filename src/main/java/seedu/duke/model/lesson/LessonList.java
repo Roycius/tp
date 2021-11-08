@@ -79,7 +79,7 @@ public class LessonList {
      */
     public LessonList filterLessonsByKeyword(String keyword) {
         return new LessonList(lessonList.stream()
-                .filter(lesson -> lesson.getTitle().toLowerCase().contains(keyword))
+                .filter(lesson -> lesson.getTitle().toLowerCase().contains(keyword.toLowerCase()))
                 .collect(Collectors.toList()));
     }
 
@@ -91,7 +91,7 @@ public class LessonList {
      */
     public LessonList filterLessonsByPeriod(String period) {
         return new LessonList(lessonList.stream()
-                .filter(lesson -> lesson.getDayOfTheWeek().toLowerCase().contains(period))
+                .filter(lesson -> lesson.getDayOfTheWeek().toLowerCase().contains(period.toLowerCase()))
                 .collect(Collectors.toList()));
     }
 
