@@ -90,33 +90,7 @@ Format: `help`
 
 Example usage:
 
-```
-$ help
-      ______________________________________________________________________________________
-       Here are the list of commands that you can try.
-       ------------------------------------------------------------------------------------
-       add task [TITLE] -d [DAY_OF_THE_WEEK] -p {PRIORITY} -i {INFORMATION}
-       add lesson [TITLE] -d [DAY_OF_THE_WEEK] -s [START_TIME] -e [END_TIME] -l {MEETING_URL}
-       add module [MODULE_CODE] -g {GRADE}
-       list task {PERIOD/PRIORITY}
-       list lesson {PERIOD}
-       list module
-       delete task [INDEX]
-       delete lesson [INDEX]
-       delete module [MODULE_CODE]
-       done task [INDEX]
-       find task [KEYWORD]
-       find lesson [KEYWORD]
-       find module [MODULE_CODE] {verbose/-v}
-       edit module [MODULE_CODE] -g [GRADE]
-       launch lesson [INDEX]
-       exit
-  
-       Notes: Square brackets -> [COMPULSORY_PARAMETER]
-              Curly braces    -> {OPTIONAL_PARAMETER}
-              More details: https://ay2122s1-cs2113t-w11-3.github.io/tp/UserGuide.html
-      ______________________________________________________________________________________
-```
+![HelpCommandExample](images/HelpCommandExample.png)
 
 You can use this as a quick guide while using NUS Buddy. The format of the commands shown by `help` 
 is the same as the one used by this guide, which can be found [here](#features).
@@ -532,38 +506,7 @@ Format: `find module [MODULE_CODE] {verbose/-v}`
 
 Example:
 
-```
-$ find module CS2113T
-      ______________________________________________________________________________________
-       CS2113T Software Engineering & Object-Oriented Programming (4MCs) 
-       Department: Computer Science
-       Faculty: Computing
-       Preclusion: CS2103, CS2103T, (CS2113T for CS2113), (CS2113 for CS2113T)
-       Prerequisite: CS2040C or ((CS2030 or its equivalent) and CS2040/S)
-       Corequisite: CS2101 Effective Communication for Computing Professionals is co-requis
-       ite for CS2113T. Students exempted from CS2101 will take CS2113 which does not have
-       CS2101 as co-req. Otherwise, CS2113 and CS2113T are identical.
-      ______________________________________________________________________________________
-
-$ find module CS2113T verbose
-      ______________________________________________________________________________________
-       CS2113T Software Engineering & Object-Oriented Programming (4MCs) 
-       This module introduces the necessary skills for systematic and rigorous development
-       of software systems. It covers requirements, design, implementation, quality assuran
-       ce, and project management aspects of small-to-medium size multi-person software pro
-       jects. The module uses the Object Oriented Programming paradigm. Students of this mo
-       dule will receive hands-on practice of tools commonly used in the industry, such as
-       test automation tools, build automation tools, and code revisioning tools will be co
-       vered.
-       Department: Computer Science
-       Faculty: Computing
-       Preclusion: CS2103, CS2103T, (CS2113T for CS2113), (CS2113 for CS2113T)
-       Prerequisite: CS2040C or ((CS2030 or its equivalent) and CS2040/S)
-       Corequisite: CS2101 Effective Communication for Computing Professionals is co-requis
-       ite for CS2113T. Students exempted from CS2101 will take CS2113 which does not have
-       CS2101 as co-req. Otherwise, CS2113 and CS2113T are identical.
-      ______________________________________________________________________________________
-```
+![FindModuleExample](images/FindModuleExample.png)
 
 ### Editing module grade - `edit module`
 
